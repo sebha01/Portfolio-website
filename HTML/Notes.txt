@@ -1,19 +1,9 @@
  
-    <body>
-        <h1 style="text-align: center;">
-            Sebastian Ha - Personal Portfolio
-        </h1>
-        <div class="buttonContainer">
-            <button class="button" onclick="window.location.href = 'AboutMe.html'";>About Me</button>
-            <button class="button" onclick="window.location.href = 'Projects.html'">Projects</button>
-            <button class="button" onclick="window.location.href = 'ContactMe.html'">Contact Me</button>
-        </div>
-    </body>
-    
-    <body>
-        <div>
-            <h2>
-                Hello
-            </h2>
-        </div>
-    </body>
+
+    <nav>   
+                <li>
+                    <a href="/HTML/index.html">
+                        <img src="/Images/Logo.png" alt="Steam Bun Games Logo" class="logo">
+                    </a>
+                </li>
+            </nav>
