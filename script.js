@@ -24,7 +24,7 @@ window.onload = function ()
         } else if (window.innerWidth >= 625) {
             targetHeight = 350;
         } else {
-            targetHeight = 300;
+            targetHeight = 200;
         }
 
         smoothResize(targetHeight);

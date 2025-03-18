@@ -23,7 +23,7 @@ li {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -102,7 +102,9 @@ footer {
               HEADING 
 -----------------------------------------
 */
+
 .headingSection {
+  background-color: rgb(45, 41, 41);
   align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
@@ -113,7 +115,7 @@ footer {
 }
 
 .hyperLinkUnderline {
-  color: black;
+  color: white;
   text-underline-offset: 6px;
 }
 
@@ -214,14 +216,23 @@ footer {
   transition: width 0.45s ease-out;
 }
 
-@media screen and (max-width: 570px) {
-  .contactRight img {
-    width: 300px;
-  }
-}
+
 
 @media screen and (max-width: 986px) {
   .contactContainer {
     height: 1000px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contactRight img {
+    width: 300px;
+    display: none;
+  }
+  .contactInputs {
+    width: 300px;
+  }
+  .contactContainer {
+    height: 500px;
   }
 }
