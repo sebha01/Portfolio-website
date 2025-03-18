@@ -1,4 +1,8 @@
- 
+TO DO ->
+- Update heading links to space out properly for smaller screen widths
+- Finish off contact section
+
+
 
     <nav>   
                 <li>
@@ -9,3 +13,4 @@
             </nav>
 
             rgb(190, 49, 68),
+
