@@ -46,20 +46,44 @@ a {
   flex-direction: column;
   height: 550px;
   justify-content: space-between;
+  /*transition: height 0.3s ease-in-out;*/
 }
 
-/* media queries for the logo*/
-@media screen and (max-width: 854px) {
+/* media queries for the logo
+@media screen and (max-width: 625px) {
   .logo {
     height: 300px;
   }
 }
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 625px) {
   .logo {
-    height: 700px;
+    height: 350px;
   }
 }
+@media screen and (min-width: 854px) {
+  .logo {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .logo {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1282px) {
+  .logo {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .logo {
+    height: 750px;
+  }
+} */
 
 /* -----------------------------HEADING HYPER LINK ---------------------*/
 
