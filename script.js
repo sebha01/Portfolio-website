@@ -14,15 +14,15 @@ window.onload = function ()
         let targetHeight;
 
         if (window.innerWidth >= 1600) {
-            targetHeight = 750;
+            targetHeight = 650;
         } else if (window.innerWidth >= 1282) {
-            targetHeight = 600;
+            targetHeight = 550;
         } else if (window.innerWidth >= 1030) {
-            targetHeight = 500;
+            targetHeight = 450;
         } else if (window.innerWidth >= 854) {
-            targetHeight = 400;
-        } else if (window.innerWidth >= 625) {
             targetHeight = 350;
+        } else if (window.innerWidth >= 625) {
+            targetHeight = 250;
         } else {
             targetHeight = 200;
         }
