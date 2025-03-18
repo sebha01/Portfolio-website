@@ -16,13 +16,6 @@ section {
   color: black;
 }
 
-footer {
-  background: rgb(45, 41, 41);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2px 5px;
-  justify-content: space-between;
-}
 
 ul {
   padding: 0;
@@ -40,11 +33,34 @@ a {
   text-decoration: none;
 }
 
+
+footer {
+  background: rgb(45, 41, 41);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px 5px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footerImages {
+  height: 20px;
+  margin: 0px 10px
+}
+
 .footerLink {
   color: white;
-  text-decoration: underline;
-  text-underline-offset: 6px;
 }
+
+.followMeText {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  margin: 10px 0;
+}
+/* -----------------------*/
 
 /*----------------------------LOGO------------------------------*/
 .logo {
@@ -109,9 +125,4 @@ a {
 .hyperLinkUnderline {
   color: black;
   text-underline-offset: 6px;
-}
-
-.footerImages {
-  height: 30px;
-  margin: 0px 10px
 }
