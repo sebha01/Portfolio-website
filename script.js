@@ -1,10 +1,12 @@
 // Code for resizing the window
-window.onload = function () {
+window.onload = function () 
+{
     const logo = document.querySelector('.logo');
 
-    function smoothResize(targetHeight) {
+    function smoothResize(targetHeight) 
+    {
         // Apply smooth transition
-        logo.style.transition = "height 0.8s ease-out";
+        logo.style.transition = "height 0.25s ease-out";
         logo.style.height = targetHeight + "px";
     }
 
