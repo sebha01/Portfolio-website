@@ -1,21 +1,15 @@
+/*
+-----------------------------------------
+              GENERAL
+-----------------------------------------
+*/
 body {
-    background-color: rgb(46, 40, 40);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-section {
-  background: black;
-  padding: 30px 10px;
+  background-color: rgb(46, 40, 40);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-.section1 {
-  background: white;
-  color: black;
-}
-
 
 ul {
   padding: 0;
@@ -33,7 +27,32 @@ a {
   text-decoration: none;
 }
 
+/*
+-----------------------------------------
+              SECTIONS
+-----------------------------------------
+*/
+section {
+  background: black;
+  padding: 10px 10px;
+}
 
+.contactPageSection {
+  background: white;
+  color: black;
+  height: 800px;
+}
+
+.section1 {
+  background: white;
+  color: black;
+}
+
+/*
+-----------------------------------------
+              FOOTER CSS
+-----------------------------------------
+*/
 footer {
   background: rgb(45, 41, 41);
   display: flex;
@@ -60,9 +79,12 @@ footer {
   text-align: center;
   margin: 10px 0;
 }
-/* -----------------------*/
 
-/*----------------------------LOGO------------------------------*/
+/*
+-----------------------------------------
+              LOGO
+-----------------------------------------
+*/
 .logo {
   background-image: url("/Images/Logo.png");
   background-size: 100%;
@@ -74,44 +96,18 @@ footer {
   /*transition: height 0.3s ease-in-out;*/
 }
 
-/* media queries for the logo
+/* media queries example for future use
 @media screen and (max-width: 625px) {
   .logo {
     height: 300px;
   }
 }
 
-@media screen and (min-width: 625px) {
-  .logo {
-    height: 350px;
-  }
-}
-@media screen and (min-width: 854px) {
-  .logo {
-    height: 400px;
-  }
-}
-
-@media screen and (min-width: 1030px) {
-  .logo {
-    height: 500px;
-  }
-}
-
-@media screen and (min-width: 1282px) {
-  .logo {
-    height: 600px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .logo {
-    height: 750px;
-  }
-} */
-
-/* -----------------------------HEADING HYPER LINK ---------------------*/
-
+/*
+-----------------------------------------
+              HEADING 
+-----------------------------------------
+*/
 .headingSection {
   align-items: flex-end;
   display: flex;
