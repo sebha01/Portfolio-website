@@ -8,3 +8,5 @@ Steam Bun Games logo picture :- created on https://looka.com/
 Github Logo :- used only for hyperlink to my github page license on link: https://github.com/logos
 LinkedIn Logo :- https://brand.linkedin.com/en-us
 Itch.io logo :- https://itch.io/press-kit
+Arrow image :- https://www.flaticon.com/free-icons/arrows
+Email image :- https://www.flaticon.com/free-icons/contact-us
