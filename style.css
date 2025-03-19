@@ -371,7 +371,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 750px; /* You can adjust this value depending on your preference */
+  height: 750px; /* Adjust this as needed */
   position: relative; /* Needed for positioning prev and next buttons */
 }
 
@@ -391,12 +391,20 @@ footer {
 
 /* Each slide's content */
 .heroContent .slide {
-  display: none;  /* Hide all slides initially */
+  display: none;  /* Initially hide all slides */
   text-align: center;
+  opacity: 0;  /* Start with no opacity */
+  transition: opacity 1s ease-in-out;  /* Add smooth fade transition */
+}
+
+/* Fade in the slides */
+.heroContent .slide.active {
+  display: block; /* Display the active slide */
+  opacity: 1; /* Fully visible */
 }
 
 .heroContent img {
-  width: 100%; /* Make sure the image takes full width of the container */
+  width: 100%; /* Ensure the image takes full width of the container */
   border-radius: 10px;
   margin-bottom: 20px;
 }

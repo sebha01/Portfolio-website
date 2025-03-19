@@ -1,10 +1,8 @@
 // Code for resizing the window
-window.onload = function () 
-{
+window.onload = function () {
     const logo = document.querySelector('.logo');
 
-    function smoothResize(targetHeight) 
-    {
+    function smoothResize(targetHeight) {
         // Apply smooth transition
         logo.style.transition = "height 0.25s ease-out";
         logo.style.height = targetHeight + "px";
@@ -52,8 +50,13 @@ window.onload = function ()
         // Hide all slides first
         slides.forEach(slide => slide.style.display = 'none');
         
-        // Show the current slide
+        // Add smooth fade-in effect for the current slide
         slides[index].style.display = 'block';
+        slides[index].style.opacity = 0;  // Start with no opacity
+        setTimeout(() => {
+            slides[index].style.transition = "opacity 1s ease-in-out"; // Add fade-in transition
+            slides[index].style.opacity = 1;
+        }, 10); // Small delay to trigger the transition effect
     }
 
     function nextSlide() {
@@ -78,6 +81,6 @@ window.onload = function ()
         nextButton.addEventListener('click', nextSlide);
     }
 
-    // Optional: Auto slide every 5 seconds
+    // Optional: Auto slide every 8 seconds
     setInterval(nextSlide, 8000);
 };
