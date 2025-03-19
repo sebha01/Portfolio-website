@@ -42,26 +42,42 @@ window.onload = function ()
 
     // Listen for resize events and smoothly transition
     window.addEventListener('resize', updateHeight);
+
+    // Carousel logic for slides
+    let slideIndex = 0;  // Track current slide index
+    const slides = document.querySelectorAll('.heroContent .slide'); // Get all slides
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        // Hide all slides first
+        slides.forEach(slide => slide.style.display = 'none');
+        
+        // Show the current slide
+        slides[index].style.display = 'block';
+    }
+
+    function nextSlide() {
+        slideIndex = (slideIndex + 1) % totalSlides; // Loop to first slide after last slide
+        showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+        slideIndex = (slideIndex - 1 + totalSlides) % totalSlides; // Loop to last slide if at the first slide
+        showSlide(slideIndex);
+    }
+
+    // Initialize the carousel by showing the first slide
+    showSlide(slideIndex);
+
+    // Add event listeners to the prev and next buttons
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    if (prevButton && nextButton) {
+        prevButton.addEventListener('click', prevSlide);
+        nextButton.addEventListener('click', nextSlide);
+    }
+
+    // Optional: Auto slide every 5 seconds
+    setInterval(nextSlide, 8000);
 };
-
-//Carousel code
-let currentIndex = 0;
-
-function moveSlide(step) {
-  const slides = document.querySelectorAll('.carousel-slide img');
-  const totalSlides = slides.length;
-
-  // Update the index
-  currentIndex += step;
-
-  // If we reach the last or first slide, loop back
-  if (currentIndex < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (currentIndex >= totalSlides) {
-    currentIndex = 0;
-  }
-
-  // Move the carousel to the current slide
-  const carouselContainer = document.querySelector('.carousel-container');
-  carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
