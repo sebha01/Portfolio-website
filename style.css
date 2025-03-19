@@ -301,4 +301,19 @@ footer {
   }
 }
 
+.AboutMeTitle h2 {
+  font-weight: 600;
+  color: black;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 5px;
+}
 
+.AboutMeTitle hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
