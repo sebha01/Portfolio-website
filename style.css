@@ -236,3 +236,69 @@ footer {
     height: 500px;
   }
 }
+
+/* -----------------------------------------
+              ABOUT ME CSS
+----------------------------------------- */
+.AboutMeSection {
+  background: white;
+  color: black;
+  padding: 50px 10%; /* Adds space around the section */
+}
+
+.AboutMeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; /* Distributes space evenly */
+  gap: 40px;
+}
+
+/* Image Container */
+.AboutMeLeftSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.AboutMeLeftSide img {
+  width: 100%;
+  max-width: 40%; /* Ensures image doesn’t get too big */
+  min-width: 400px; /* Prevents it from becoming too small */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Text Container */
+.AboutMeRightSide {
+  flex: 1.5; /* Allows text to take up more space */
+  max-width: 600px;
+}
+
+.AboutMeRightSide p {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+}
+
+/* Mid-size screens (avoid tiny image issue) */
+@media (max-width: 1300px) {
+  .AboutMeLeftSide img {
+    max-width: 60%; /* Let image grow more */
+  }
+}
+
+/* Responsive Design (Stack layout when very small) */
+@media (max-width: 1200px) {
+  .AboutMeContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .AboutMeLeftSide img {
+    max-width: 80%; /* Make image bigger when stacked */
+  }
+}
+
+
