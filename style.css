@@ -20,6 +20,7 @@ ul {
 li {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -112,6 +113,11 @@ footer {
   justify-content: center;
   padding: 10px;
   text-align: center; 
+}
+
+.headingSection ul {
+  
+  
 }
 
 .hyperLinkUnderline {
@@ -243,14 +249,14 @@ footer {
 .AboutMeSection {
   background: white;
   color: black;
-  padding: 50px 10%; /* Adds space around the section */
+  padding: 50px 10%;
 }
 
 .AboutMeContainer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly; /* Distributes space evenly */
+  justify-content: space-evenly;
   gap: 40px;
 }
 
@@ -263,17 +269,17 @@ footer {
 
 .AboutMeLeftSide img {
   width: 100%;
-  max-width: 40%; /* Ensures image doesn’t get too big */
-  min-width: 200px; /* Prevents it from becoming too small */
+  max-height: 60%;
+  min-width: 200px;
   height: auto;
   object-fit: cover;
-  border-radius: 10px; /* Optional rounded corners */
+  border-radius: 10px;
 }
 
 /* Text Container */
 .AboutMeRightSide {
-  flex: 1.5; /* Allows text to take up more space */
-  max-width: 600px;
+  flex: 1.5;
+  max-height: 600px;
 }
 
 .AboutMeRightSide p {
@@ -282,14 +288,12 @@ footer {
   line-height: 1.6;
 }
 
-/* Mid-size screens (avoid tiny image issue) */
 @media screen and (max-width: 1300px) {
   .AboutMeLeftSide img {
-    max-width: 60%; /* Let image grow more */
+    max-height: 90%;
   }
 }
 
-/* Responsive Design (Stack layout when very small) */
 @media screen and (max-width: 1200px) {
   .AboutMeContainer {
     flex-direction: column;
@@ -297,8 +301,14 @@ footer {
   }
 
   .AboutMeLeftSide img {
-    max-width: 80%; /* Make image bigger when stacked */
+    max-height: 80%;
   }
+}
+
+.AboutMeTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .AboutMeTitle h2 {
