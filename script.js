@@ -13,18 +13,26 @@ window.onload = function ()
     function updateHeight() {
         let targetHeight;
 
-        if (window.innerWidth >= 1600) {
+        if (window.innerWidth >= 2500) {
+            targetHeight = 700;
+        } else if (window.innerWidth >= 1977) {
             targetHeight = 650;
-        } else if (window.innerWidth >= 1282) {
-            targetHeight = 550;
-        } else if (window.innerWidth >= 1030) {
-            targetHeight = 450;
-        } else if (window.innerWidth >= 854) {
-            targetHeight = 350;
-        } else if (window.innerWidth >= 625) {
-            targetHeight = 250;
+        } else if (window.innerWidth >= 1440) {
+            targetHeight = 450; 
+        } else if (window.innerWidth >= 1024) {
+            targetHeight = 310; 
+        } else if (window.innerWidth >= 766) {
+            targetHeight = 220; 
+        } else if (window.innerWidth >= 582) {
+            targetHeight = 190;
+        } else if (window.innerWidth >= 475) {
+            targetHeight = 150;
+        } else if (window.innerWidth >= 415) {
+            targetHeight = 140;
+        } else if (window.innerWidth >= 350) {
+            targetHeight = 120;
         } else {
-            targetHeight = 200;
+            targetHeight = 100;
         }
 
         smoothResize(targetHeight);
