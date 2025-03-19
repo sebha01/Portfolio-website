@@ -83,4 +83,5 @@ window.onload = function () {
 
     // Optional: Auto slide every 8 seconds
     setInterval(nextSlide, 8000);
+    
 };
