@@ -59,6 +59,7 @@ footer {
   background: #2e2828;
   display: flex;
   flex-wrap: wrap;
+  font-size: 20px;
   padding: 2px 5px;
   justify-content: space-between;
   align-items: center;
@@ -111,10 +112,11 @@ footer {
 
 .headingSection {
   background-color: #000000; 
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20%;
+  padding: 25px 20%;
 }
 
 .headingSection ul {
@@ -133,6 +135,21 @@ footer {
 .headingSection a {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .headingSection {
+    padding: 15px 10%;
+    justify-content: center;
+  }
+
+  .headingSection ul {
+    justify-content: center;
+  }
+
+  .headingSection a {
+    font-size: 16px;
+  }
 }
 /*
 -----------------------------------------
