@@ -250,6 +250,13 @@ footer {
   background: white;
   color: black;
   padding: 50px 10%;
+  max-width: 12000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .AboutMeContainer {
@@ -258,6 +265,9 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: auto;
 }
 
 /* Image Container */
@@ -279,7 +289,9 @@ footer {
 /* Text Container */
 .AboutMeRightSide {
   flex: 1.5;
-  max-height: 600px;
+  max-width: 900px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .AboutMeRightSide p {
@@ -298,10 +310,11 @@ footer {
   .AboutMeContainer {
     flex-direction: column;
     text-align: center;
+    max-width: 90%;
   }
 
-  .AboutMeLeftSide img {
-    max-height: 80%;
+  .AboutMeRightSide {
+    max-width: 100%;
   }
 }
 
