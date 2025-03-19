@@ -264,7 +264,7 @@ footer {
 .AboutMeLeftSide img {
   width: 100%;
   max-width: 40%; /* Ensures image doesn’t get too big */
-  min-width: 400px; /* Prevents it from becoming too small */
+  min-width: 200px; /* Prevents it from becoming too small */
   height: auto;
   object-fit: cover;
   border-radius: 10px; /* Optional rounded corners */
@@ -283,14 +283,14 @@ footer {
 }
 
 /* Mid-size screens (avoid tiny image issue) */
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .AboutMeLeftSide img {
     max-width: 60%; /* Let image grow more */
   }
 }
 
 /* Responsive Design (Stack layout when very small) */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .AboutMeContainer {
     flex-direction: column;
     text-align: center;
