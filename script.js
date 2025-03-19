@@ -43,3 +43,25 @@ window.onload = function ()
     // Listen for resize events and smoothly transition
     window.addEventListener('resize', updateHeight);
 };
+
+//Carousel code
+let currentIndex = 0;
+
+function moveSlide(step) {
+  const slides = document.querySelectorAll('.carousel-slide img');
+  const totalSlides = slides.length;
+
+  // Update the index
+  currentIndex += step;
+
+  // If we reach the last or first slide, loop back
+  if (currentIndex < 0) {
+    currentIndex = totalSlides - 1;
+  } else if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  // Move the carousel to the current slide
+  const carouselContainer = document.querySelector('.carousel-container');
+  carouselContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
