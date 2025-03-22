@@ -527,10 +527,12 @@ footer {
 }
 
 .prev {
+  width: 3%;
   left: 10px;
 }
 
 .next {
+  width: 3%;
   right: 10px;
 }
 
