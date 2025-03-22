@@ -540,3 +540,16 @@ iframe {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1025px) {
+  iframe {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  iframe {
+    width: 45%;
+  }
+}
+
