@@ -485,3 +485,58 @@ footer {
   height : auto;
 }
 
+
+/* -----------------------------------------
+              ACTUAL PROJECT PAGES CSS
+----------------------------------------- */
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  font-size: x-large;
+  justify-content: center; 
+  padding: 5%;
+  align-items: center;
+  text-align: center; 
+}
+
+
+hr {
+  border: none;
+  height: 10px;
+  background-color: white;
+  width: 20%;              
+}
+
+
+iframe {
+  margin: 20px 0;
+  height: auto;
+  width: 100%;
+}
+
+.projectDetails img {
+  width: 60%;           
+  height: auto;         
+  margin: 20px 0;      
+  border-radius: 10px;  
+}
+
+.projectDetails p {
+  width: 80%;          
+  margin: 10px auto;   
+}
+
+.projectDetails h2, .projectDetails h3 {
+  margin: 20px 0;
+  color: white; 
+}
+
+@media screen and (max-width: 1024px) {
+  .projectDetails {
+    font-size: large;
+  }
+
+  .projectDetails img {
+    width: 100%;
+  }
+}
