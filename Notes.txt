@@ -15,7 +15,7 @@ TO DO ->
             rgb(190, 49, 68),
 
 
-Outbreak delta widget link;
+Outbreak delta widget link; -- DONE --
 
 <iframe frameborder="0" src="https://itch.io/embed/3413107?border_width=4&amp;bg_color=3d5691&amp;fg_color=ffffff&amp;link_color=1a2aa5&amp;border_color=000000" width="558" height="173">
     <a href="https://sebastianha01.itch.io/outbreak-delta">
@@ -23,7 +23,7 @@ Outbreak delta widget link;
     </a>
 </iframe>
 
-Sploot widget link ;
+Sploot widget link ;  -- DONE --
 
 <iframe frameborder="0" src="https://itch.io/embed/3412828?border_width=3&amp;bg_color=2679d5&amp;fg_color=ffffff&amp;link_color=1445a1&amp;border_color=000000" width="556" height="171">
     <a href="https://sebastianha01.itch.io/sploot">
