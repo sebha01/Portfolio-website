@@ -492,6 +492,10 @@ footer {
   transition: opacity 3s ease-in-out;  
 }
 
+.heroContent .slide img {
+  width: 50%;
+} 
+
 .heroContent .slide.active {
   display: block;
   opacity: 1;
