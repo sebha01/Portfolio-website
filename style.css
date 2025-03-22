@@ -450,3 +450,30 @@ footer {
     font-size: medium;
   }
 }
+
+/* -----------------------------------------
+              PROJECTS PAGE CSS
+----------------------------------------- */
+.projects-container {
+  color: white; 
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  margin: 20px;
+}
+
+.projects-section {
+  margin: 40px 0;
+}
+
+.project-image {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project {
+  margin: 20px 0;
+}
