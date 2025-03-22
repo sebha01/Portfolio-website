@@ -104,6 +104,66 @@ footer {
   width: 50%;
 }
 
+@media screen and (min-width: 1977px) {
+  .logo {
+      height: 650px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .logo {
+      height: 700px;
+  }
+}
+
+@media screen and (max-width: 1976px) and (min-width: 1440px) {
+  .logo {
+      height: 450px;
+  }
+}
+
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+  .logo {
+      height: 310px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 766px) {
+  .logo {
+      height: 220px;
+  }
+}
+
+@media screen and (max-width: 765px) and (min-width: 582px) {
+  .logo {
+      height: 190px;
+  }
+}
+
+@media screen and (max-width: 581px) and (min-width: 475px) {
+  .logo {
+      height: 150px;
+  }
+}
+
+@media screen and (max-width: 474px) and (min-width: 415px) {
+  .logo {
+      height: 140px;
+  }
+}
+
+@media screen and (max-width: 414px) and (min-width: 350px) {
+  .logo {
+      height: 120px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .logo {
+      height: 100px;
+  }
+}
+
 /*
 -----------------------------------------
               HEADING 
