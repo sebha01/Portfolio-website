@@ -39,7 +39,7 @@ Sonder Reflections widget link; -- DONE --
     </a>
 </iframe>
 
-Aku, Frenzied Shinigami widget link;
+Aku, Frenzied Shinigami widget link; -- DONE --
 
 <iframe frameborder="0" src="https://itch.io/embed/3413053?border_width=3&amp;bg_color=5f5d5b&amp;fg_color=ffffff&amp;link_color=00017e&amp;border_color=000000" width="556" height="171">
     <a href="https://sebastianha01.itch.io/aku-frenzied-shinigami">
